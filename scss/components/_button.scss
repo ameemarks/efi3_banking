@@ -1,0 +1,21 @@
+.button {
+  width: 120px;
+  height: 30px;
+  background: $fontColor;
+  color: black;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 10px 5px;
+  box-sizing: padding-box;
+}
+
+.button:focus{
+  background: $mainColor;
+  color: $fontColor;
+}
+
+.button:hover {
+  background: $lightMainColor;
+  color: black;
+}

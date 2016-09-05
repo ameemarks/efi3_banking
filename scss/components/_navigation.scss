@@ -1,0 +1,49 @@
+.menu {
+  list-style: none;
+  font-size: 0.6rem;
+
+  li {
+    width: 25%;
+
+    a {
+      padding-top: 19px;
+    }
+  }
+
+  li:hover {
+    background-color: $hoverColor;
+    position: relative;
+  }
+
+  li:hover {
+    color: $fontColor;
+
+    &::after {
+      content: "";
+      padding: 10px;
+      background-color: $hoverColor;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      margin-top: -10px;
+      left: 35%;
+    }
+
+    a:hover {
+      color:$fontColor;
+    }
+  }
+
+}
+
+.nav_icon {
+  margin: 10px auto;
+  img {
+    height: 30px;
+  }
+}
+
+.nav_name {
+  display: block;
+  padding: 10px 0;
+}
