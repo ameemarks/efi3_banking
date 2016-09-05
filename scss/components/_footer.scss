@@ -1,0 +1,28 @@
+.options {
+  list-style-type: none;
+  text-align: left;
+  margin: 20px auto 30px 0;
+  font: {
+    size: 10px;
+    weight: bold;
+  }
+
+  li {
+  display: inline-block;
+
+    a {
+      color: $darkerFontColor;    //invalid property value (nie daje się nadpisać)
+    }
+
+    a:hover {
+      color: $mainColor;
+    }
+
+  }
+
+  li:nth-child(2) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+

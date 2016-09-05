@@ -1,8 +1,8 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 @import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import '../bower_components/foundation-sites/scss/foundation';
+@import '../bower_components/motion-ui/motion-ui';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -48,3 +48,38 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+//Reset
+@import "reset.css";
+
+//Modules - zmienne, mixiny, mapy
+@import "variables";
+@import "colors";
+@import "modules";
+@import "typography";
+
+//Components - stałe elementy strony
+@import "components/_apla";
+@import "components/avatar";
+@import "components/background";
+@import "components/button";
+@import "components/footer";
+@import "components/form_elems";
+@import "components/icons";
+@import "components/logo";
+@import "components/navigation";
+@import "components/search";
+@import "components/switch_button";
+
+//Pages - poszczególne części strony;
+@import "pages/login_site";
+@import "pages/dashboard";
+
+
+
+body {
+  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  color: $fontColor;
+  text-align: center;
+
+}

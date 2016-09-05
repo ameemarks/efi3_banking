@@ -1,0 +1,106 @@
+.dashboard_header_container {
+  background-color: $mainColor;
+
+}
+
+.usrname {
+  text-align: left;
+  display: block;
+  margin-top: 20px;
+  height: 40px;
+  line-height: 1rem;
+  // overflow: hidden;
+}
+
+.usroptions {
+  display: inline-block;
+}
+
+.messageCount {
+  background-color: #e81c7b;
+}
+
+.settings {
+  img {
+      border-radius: 50%;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .8s ease-in-out;
+    }
+    img:hover {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+
+.search_power_outer_container {
+  height: 110px;
+  position: relative;
+
+  .search_power_inner_container {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    //top: 50%;                     // wyśrodkowuje w poziomie
+    //transform: translateY(-50%);    // wyśrodkowuje w poziomie
+    right: 0;
+    font-size: 0;   // removes white space between span elems
+    width: 100%;
+
+    .search_icon, .power_icon {
+      display: inline-block;
+      height: 70px;
+
+      img {
+        height: 30px;
+        box-sizing: content-box;
+        padding: 20px 5px;
+      }
+    }
+  }
+}
+
+
+.power_icon {
+  border-left: 1px solid $fontColor;
+}
+
+
+/* SECTION: FINANCE LIFE STREAM */
+
+.stream_container {
+  background-color: $majorBackgroundColor;
+  color: $hoverColor;
+  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.history_container {
+  background-color: white;
+  color: black;
+  max-height: 400px;        //robi się scroll, trzyma wysokośc
+
+  ul {
+    list-style: none;
+  }
+
+}
+
+h3 {
+  color: black;
+  float: left;
+  padding-left: 30px;
+}
+
+.history_date {
+  background-color: blue;
+}
+
+.history_payment {
+  background-color: yellow;
+  height: 50px;
+}
+
+.history_value {
+  background-color: deeppink;
+}
