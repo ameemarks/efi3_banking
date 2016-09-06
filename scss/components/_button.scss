@@ -1,3 +1,4 @@
+/* -- BUTTONY Z LOGIN PAGE -- */
 .button {
   width: 120px;
   height: 30px;
@@ -16,6 +17,33 @@
 }
 
 .button:hover {
+  background: $lightMainColor;
+  color: black;
+}
+
+/* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
+
+
+                          /* --- !!!!ZROBIĆ MIXIN I WYWALIĆ CZĘŚĆ KODU!!! --- */
+
+.option_button {
+  //width: 120px;
+  height: 30px;
+  background: $mainColor;
+  color: $fontColor;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 10px 5px;
+  box-sizing: padding-box;
+}
+
+.option_button:focus{
+  background: $mainColor;
+  color: $fontColor;
+}
+
+.option_button:hover {
   background: $lightMainColor;
   color: black;
 }
