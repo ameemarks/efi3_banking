@@ -4456,6 +4456,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover; }
 
+/* -- BUTTONY Z LOGIN PAGE -- */
 .button {
   width: 120px;
   height: 30px;
@@ -4472,6 +4473,26 @@ a {
   color: white; }
 
 .button:hover {
+  background: #a7e9f1;
+  color: black; }
+
+/* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
+/* --- !!!!ZROBIĆ MIXIN I WYWALIĆ CZĘŚĆ KODU!!! --- */
+.option_button {
+  height: 30px;
+  background: #13bdd2;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 10px 5px;
+  box-sizing: padding-box; }
+
+.option_button:focus {
+  background: #13bdd2;
+  color: white; }
+
+.option_button:hover {
   background: #a7e9f1;
   color: black; }
 
@@ -4722,6 +4743,27 @@ input.cmn-toggle-round-flat:checked + label:after {
   margin-left: 60px;
   background-color: #8ce196; }
 
+.usroptions {
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+
+.mail_box span {
+  position: absolute; }
+.mail_box a {
+  position: absolute; }
+
+.messageCount {
+  background-color: #e81c7b; }
+
+.settings img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out; }
+.settings img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
 .container {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
   color: white; }
@@ -4735,20 +4777,6 @@ input.cmn-toggle-round-flat:checked + label:after {
   margin-top: 20px;
   height: 40px;
   line-height: 1rem; }
-
-.usroptions {
-  display: inline-block; }
-
-.messageCount {
-  background-color: #e81c7b; }
-
-.settings img {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out; }
-.settings img:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg); }
 
 .search_power_outer_container {
   height: 110px;
@@ -4799,6 +4827,21 @@ h3 {
 
 .history_value {
   background-color: deeppink; }
+
+.summary_container, .account_options_container, .awards_container {
+  background-color: #d9dada;
+  color: #000;
+  text-align: left; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1rem; }
+
+h3 {
+  font-size: 1rem;
+  padding-left: 0; }
 
 body {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;

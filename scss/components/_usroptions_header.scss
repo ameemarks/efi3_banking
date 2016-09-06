@@ -1,0 +1,36 @@
+.usroptions {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.mail_box {
+  span {
+    position: absolute;
+  }
+
+  a {
+    position: absolute;
+  }
+
+}
+
+.messageCount {
+  background-color: #e81c7b;
+}
+
+.settings {
+  img {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+  }
+  img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.award {
+
+}
