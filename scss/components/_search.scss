@@ -118,3 +118,35 @@ ul {
 .toolbar input[type="search"]::-moz-placeholder { color: #fff; opacity: 1; }
 .toolbar input[type="search"]:-moz-placeholder { color: #fff; opacity: 1; }
 .toolbar input[type="search"]:-ms-input-placeholder { color: #fff; }
+
+
+
+
+/* ----------  MY SEARCH  -----------*/
+
+.search_power_outer_container {
+  height: 110px;
+  position: relative;
+
+  .search_power_inner_container {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    //top: 50%;                     // wyśrodkowuje w poziomie
+    //transform: translateY(-50%);    // wyśrodkowuje w poziomie
+    right: 0;
+    font-size: 0;   // removes white space between span elems
+    width: 100%;
+
+    .search_icon {
+      display: inline-block;
+      height: 70px;
+
+      img {
+        height: 30px;
+        box-sizing: content-box;
+        padding: 20px 5px;
+      }
+    }
+  }
+}

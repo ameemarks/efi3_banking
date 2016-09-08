@@ -71,6 +71,7 @@
 @import "components/search";
 @import "components/switch_button";
 @import "components/usroptions_header";
+@import "components/header_elems";
 
 //Pages - poszczególne części strony;
 @import "pages/login_site";
@@ -80,8 +81,12 @@
 
 
 body {
-  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
   color: $fontColor;
   text-align: center;
 
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
 }

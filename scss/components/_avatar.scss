@@ -1,5 +1,4 @@
 .avatar_round {
-  //heigth: 100px;
   width: 96px;
   margin: 85px auto 20px auto;
   background-color: $fontColor;
@@ -7,12 +6,15 @@
   padding: 48px 0;
 }
 
-.avatar_square img {
-  border-radius: 5px;
-  margin: 20px auto;
-}
+.avatar_square {
+  max-width: 70px;
 
-.tooltip {
-  background-color: blue;
-  color: yellow;
+  a {
+    height: 70px;
+    margin: 20px auto;
+
+    img {
+      border-radius: 5px;
+    }
+  }
 }

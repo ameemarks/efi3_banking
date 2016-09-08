@@ -8,14 +8,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
     <script src="js/search.js"></script>
     <script src="js/cash_values.js"></script>
     <script src="js/history_list.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.core.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
-
 
 </head>
 
@@ -250,6 +246,12 @@
             </div>
         </div>
     </section>
+
+    <script src="js/foundation.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 
 </body>
 </html>

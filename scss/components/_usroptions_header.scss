@@ -2,21 +2,31 @@
   display: inline-block;
   position: relative;
   width: 100%;
+
+  a img {
+    height: 20px;
+  }
 }
 
 .mail_box {
   span {
     position: absolute;
+    bottom: 2px;
+    left: 10px;
+    z-index: 1;
   }
 
   a {
     position: absolute;
+    top: -17px;
+    left: 0;
   }
 
 }
 
 .messageCount {
-  background-color: #e81c7b;
+  background-color: $messageCount;
+  font-weight: bold;
 }
 
 .settings {
@@ -29,8 +39,4 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-.award {
-
 }
