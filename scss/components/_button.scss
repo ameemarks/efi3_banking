@@ -38,6 +38,14 @@
   box-sizing: padding-box;
 }
 
+.option_button:nth-child(3) {
+  background-color: $secondaryButtonColor;
+}
+
+.option_button:nth-child(3):visited {
+  background-color: $secondaryButtonColor;
+}
+
 .option_button:focus{
   background: $mainColor;
   color: $fontColor;

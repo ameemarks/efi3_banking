@@ -4443,13 +4443,13 @@ a {
   border-radius: 50%;
   padding: 48px 0; }
 
-.avatar_square img {
-  border-radius: 5px;
-  margin: 20px auto; }
-
-.tooltip {
-  background-color: blue;
-  color: yellow; }
+.avatar_square {
+  max-width: 70px; }
+  .avatar_square a {
+    height: 70px;
+    margin: 20px auto; }
+    .avatar_square a img {
+      border-radius: 5px; }
 
 .login_background {
   background-image: url("../pics/login_page/background_container.png");
@@ -4487,6 +4487,12 @@ a {
   font-size: 0.9rem;
   padding: 10px 5px;
   box-sizing: padding-box; }
+
+.option_button:nth-child(3) {
+  background-color: #aeaeae; }
+
+.option_button:nth-child(3):visited {
+  background-color: #aeaeae; }
 
 .option_button:focus {
   background: #13bdd2;
@@ -4540,7 +4546,8 @@ a {
   margin-top: 40px; }
 
 .header_logo {
-  margin: 20px auto; }
+  margin: 20px auto;
+  max-width: 70px; }
 
 .menu {
   list-style: none;
@@ -4692,6 +4699,25 @@ ul {
 .toolbar input[type="search"]:-ms-input-placeholder {
   color: #fff; }
 
+/* ----------  MY SEARCH  -----------*/
+.search_power_outer_container {
+  height: 110px;
+  position: relative; }
+  .search_power_outer_container .search_power_inner_container {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0;
+    font-size: 0;
+    width: 100%; }
+    .search_power_outer_container .search_power_inner_container .search_icon {
+      display: inline-block;
+      height: 70px; }
+      .search_power_outer_container .search_power_inner_container .search_icon img {
+        height: 30px;
+        box-sizing: content-box;
+        padding: 20px 5px; }
+
 .cmn-toggle {
   position: absolute;
   margin-left: -9999px;
@@ -4747,14 +4773,22 @@ input.cmn-toggle-round-flat:checked + label:after {
   display: inline-block;
   position: relative;
   width: 100%; }
+  .usroptions a img {
+    height: 20px; }
 
 .mail_box span {
-  position: absolute; }
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  z-index: 1; }
 .mail_box a {
-  position: absolute; }
+  position: absolute;
+  top: -17px;
+  left: 0; }
 
 .messageCount {
-  background-color: #e81c7b; }
+  background-color: #e81c7b;
+  font-weight: bold; }
 
 .settings img {
   border-radius: 50%;
@@ -4764,12 +4798,9 @@ input.cmn-toggle-round-flat:checked + label:after {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg); }
 
-.container {
-  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
-  color: white; }
-
 .dashboard_header_container {
-  background-color: #13bdd2; }
+  background-color: #13bdd2;
+  max-height: 110px; }
 
 .usrname {
   text-align: left;
@@ -4785,19 +4816,24 @@ input.cmn-toggle-round-flat:checked + label:after {
     display: inline-block;
     float: right;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
-    font-size: 0;
     width: 100%; }
-    .search_power_outer_container .search_power_inner_container .search_icon, .search_power_outer_container .search_power_inner_container .power_icon {
-      display: inline-block;
-      height: 70px; }
-      .search_power_outer_container .search_power_inner_container .search_icon img, .search_power_outer_container .search_power_inner_container .power_icon img {
-        height: 30px;
-        box-sizing: content-box;
-        padding: 20px 5px; }
 
 .power_icon {
-  border-left: 1px solid white; }
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  float: right;
+  display: inline-block;
+  height: 70px; }
+  .power_icon img {
+    padding: 20px 0 0 25px;
+    height: 30px;
+    box-sizing: content-box; }
+
+.container {
+  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  color: white; }
 
 /* SECTION: FINANCE LIFE STREAM */
 .stream_container {
@@ -4844,8 +4880,11 @@ h3 {
   padding-left: 0; }
 
 body {
-  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
   color: white;
   text-align: center; }
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif; }
 
 /*# sourceMappingURL=app.css.map */
