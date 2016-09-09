@@ -4460,8 +4460,8 @@ a {
 .button {
   width: 120px;
   height: 30px;
-  background: white;
-  color: black;
+  background-color: white;
+  color: #000;
   margin-top: 20px;
   border-radius: 5px;
   font-size: 0.9rem;
@@ -4469,37 +4469,31 @@ a {
   box-sizing: padding-box; }
 
 .button:focus {
-  background: #13bdd2;
+  background-color: #13bdd2;
   color: white; }
 
 .button:hover {
-  background: #a7e9f1;
-  color: black; }
+  background-color: #a7e9f1;
+  color: #000; }
 
 /* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
 /* --- !!!!ZROBIĆ MIXIN I WYWALIĆ CZĘŚĆ KODU!!! --- */
 .option_button {
-  height: 30px;
-  background: #13bdd2;
-  color: white;
-  margin-top: 20px;
+  width: auto;
+  background-color: #13bdd2;
   border-radius: 5px;
-  font-size: 0.9rem;
-  padding: 10px 5px;
-  box-sizing: padding-box; }
+  font-size: 0.8rem;
+  padding: 8px 15px;
+  color: white; }
 
-.option_button:nth-child(3) {
-  background-color: #aeaeae; }
-
-.option_button:nth-child(3):visited {
+.button.secondary {
   background-color: #aeaeae; }
 
 .option_button:focus {
-  background: #13bdd2;
-  color: white; }
+  color: #000; }
 
-.option_button:hover {
-  background: #a7e9f1;
+.option_button:hover, .button.secondary:hover {
+  background-color: white;
   color: black; }
 
 .options {
