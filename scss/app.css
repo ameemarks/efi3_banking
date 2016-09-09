@@ -4582,6 +4582,11 @@ a {
   display: block;
   padding: 10px 0; }
 
+.title-bar {
+  padding: 43px 10px;
+  background-color: #13bdd2;
+  float: right; }
+
 /* ---------- GENERAL ---------- */
 /*button {
   -webkit-appearance: button;
