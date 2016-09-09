@@ -4878,12 +4878,23 @@ h3 {
   font-size: 1rem;
   padding-left: 0; }
 
+.summary_values {
+  font-weight: 700; }
+
+.bolderH3 {
+  font-weight: 700; }
+
+.account_options_elems {
+  max-width: 16.66667%; }
+
 body {
   font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: white;
   text-align: center; }
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif; }
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300; }
 
 /*# sourceMappingURL=app.css.map */

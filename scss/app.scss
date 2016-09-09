@@ -78,10 +78,9 @@
 @import "pages/dashboard";
 @import "pages/grywalizacja";
 
-
-
 body {
   font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   color: $fontColor;
   text-align: center;
 
@@ -89,4 +88,5 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
