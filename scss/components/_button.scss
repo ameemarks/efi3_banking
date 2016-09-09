@@ -2,8 +2,8 @@
 .button {
   width: 120px;
   height: 30px;
-  background: $fontColor;
-  color: black;
+  background-color: $fontColor;
+  color: $hoverColor;
   margin-top: 20px;
   border-radius: 5px;
   font-size: 0.9rem;
@@ -12,13 +12,13 @@
 }
 
 .button:focus{
-  background: $mainColor;
+  background-color: $mainColor;
   color: $fontColor;
 }
 
 .button:hover {
-  background: $lightMainColor;
-  color: black;
+  background-color: $lightMainColor;
+  color: $hoverColor;
 }
 
 /* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
@@ -27,31 +27,23 @@
                           /* --- !!!!ZROBIĆ MIXIN I WYWALIĆ CZĘŚĆ KODU!!! --- */
 
 .option_button {
-  //width: 120px;
-  height: 30px;
-  background: $mainColor;
-  color: $fontColor;
-  margin-top: 20px;
+  width: auto;
+  background-color: $mainColor;
   border-radius: 5px;
-  font-size: 0.9rem;
-  padding: 10px 5px;
-  box-sizing: padding-box;
-}
-
-.option_button:nth-child(3) {
-  background-color: $secondaryButtonColor;
-}
-
-.option_button:nth-child(3):visited {
-  background-color: $secondaryButtonColor;
-}
-
-.option_button:focus{
-  background: $mainColor;
+  font-size: 0.8rem;
+  padding: 8px 15px;
   color: $fontColor;
 }
 
-.option_button:hover {
-  background: $lightMainColor;
+.button.secondary {
+ background-color: $secondaryButtonColor;
+}
+
+.option_button:focus {
+  color: $hoverColor;
+}
+
+.option_button:hover, .button.secondary:hover {
+  background-color: $fontColor;
   color: black;
 }
