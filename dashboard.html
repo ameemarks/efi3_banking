@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efi3 banking solutions</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cash_values.js"></script>
+    <script src="js/history_list.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="dashboard_header_container">
+            <div class="row">
+
+                <div class="small-2 large-1 large-offset-1 columns ">      <!-- logo EFI3 -->
+                    <div class="header_logo">
+                        <a href="#"><img src="images/login_page/logo_efi3.png"></a>
+                    </div>
+                </div>
+
+                <div class=" small-2 large-1 columns">     <!-- avatar -->
+                    <div class="avatar_square">
+                        <a href="#" class="has-tip" data-tooltip aria-haspopup="true" data-options="disable_for_touch:true" title="Tooltip for user"><img src="images/dashboard/selfie.jpg"></a>
+                    </div>
+                </div>
+
+                <div class=" small-4 medium-2 columns">                   <!-- name + mail + settings -->
+
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <span class="usrname">Jan Kowalski</span>
+                        </div>
+                    </div>
+
+                    <div class="row collapse">
+                        <div class="small-3 medium-4 large-2 columns">
+                            <span class="usroptions mail_box">
+                                <!--<span aria-describedby="messageCount">Unread Messages</span>-->
+                                <span class="badge messageCount">2</span>
+                                <a href="#"><img src="images/dashboard/icons/mail.png"></a>
+                            </span>
+                        </div>
+                        <div class="small-3 medium-4 large-2 columns">
+                            <span class="usroptions settings">
+                                <a href="#"><img src="images/dashboard/icons/settings.png"></a>
+                            </span>
+                        </div>
+                        <div class="small-3 medium-4 large-2 columns end">
+                            <span class="usroptions award">
+                                <a href="#"><img src="images/dashboard/icons/award_ribbon.png"></a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="small-2 medium-4 large-3 columns">           <!-- nav -->
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">
+                                    <div class="nav_icon">
+                                        <img src="images/dashboard/icons/home.png">
+                                    </div>
+                                    <span class="nav_name">HOME</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="nav_icon">
+                                        <img src="images/dashboard/icons/analyse.png">
+                                    </div>
+                                    <span class="nav_name">ANALYSE</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="nav_icon">
+                                        <img src="images/dashboard/icons/plan.png">
+                                    </div>
+                                    <span class="nav_name">PLAN</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="nav_icon">
+                                        <img src="images/dashboard/icons/earn.png">
+                                    </div>
+                                    <span class="nav_name">EARN</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="small-2 large-3 column end">           <!-- search + off -->
+
+                    <div class="search_power_outer_container">
+                        <div class="search_power_inner_container"> <!-- container-->
+
+                            <form action="javascript:void(0);" method="get">
+                                <fieldset>
+
+                                    <ul class="toolbar clearfix">
+
+                                        <li><input type="search" id="search" class="search_field" placeholder="What are you looking for?"></li>
+                                        <li>
+                                            <button type="submit" id="btn-search" class="search_button">
+                                                <span class="search_icon">
+                                                    <a href="#"><img src="images/dashboard/icons/search.png"></a>
+                                                </span>
+                                            </button>
+                                        </li>
+
+                                    </ul>
+
+
+                                </fieldset>
+                            </form>
+
+                            <span class="power_icon">
+                                <a href="#"><img src="images/dashboard/icons/power.png"></a>
+                            </span>
+
+                        </div>
+                    </div>
+
+
+                   <!-- <form action="javascript:void(0);" method="get">
+
+                        <fieldset>
+
+                            <ul class="toolbar clearfix">
+
+                                <li><a href="#" class="fontawesome-heart"></a></li>
+                                <li><a href="#" class="fontawesome-eye-open"></a></li>
+                                <li><a href="#" class="fontawesome-comment"></a></li>
+                                <li><input type="search" id="search" placeholder="What are you looking for?"></li>
+                                <li><button type="submit" id="btn-search"><span class="fontawesome-search"></span></button></li>
+
+                            </ul>
+
+                        </fieldset>
+
+                    </form> -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="stream_container">
+        <div class="row">
+            <div class="small-12 medium-8 large-7 columns large-offset-1">    <!--finance life stream, values-->
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h1>Finance life stream</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-4 columns"><h2>Balance</h2></div>
+                    <div class="small-4 columns"><h2>Available funds</h2></div>
+                    <div class="small-4 columns"><h2>Scheduled payments</h2></div>
+                </div>
+
+                <div class="row">
+                    <div class="small-4 columns">
+                        <div id="balance"><span> PLN</span></div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div id="funds"></div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div id="payments"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="small-12 medium-4 large-3 columns end">           <!--additional account options for user-->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <span>Add</span>
+                        <a href="#" class="option_button">BANK</a>
+                        <a href="#" class="option_button">PAYMENT</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <span>Account analysis</span>
+                        <fieldset class="switch" tabindex="0">
+                            <input id="exampleCheckboxSwitch4" type="checkbox">
+                            <label for="exampleCheckboxSwitch4"></label>
+                        </fieldset>
+
+                        <div class="switch">
+                            <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label for="cmn-toggle-4" data-on="ON" data-off="OFF"></label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="small-6 columns"></div>
+            <div class="small-6 columns">
+                <div class="row">
+                    <h3>History</h3>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="list_component_container history_container">
+                            <ul>
+                                <li class="row collapse list">
+                                    <!--<div class="small-2 columns">
+                                        <div class="history_date">DATA</div>
+                                    </div>
+                                    <div class="small-7 columns">
+                                        <div class="history_payment">
+                                            <div class="history_payment_transaction">Gas Station Shell</div>
+                                            <div class="history_payment_category">Gas</div>
+                                        </div>
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <div class="history_value">-100 PLN</div>
+                                    </div>-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/foundation.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+</body>
+</html>
