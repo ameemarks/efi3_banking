@@ -26,10 +26,15 @@ h3 {
 }
 
 .flex_container {
+  margin: 0;
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  .flex_item {
-
+  .filling_empty_space_childs {
+    width:150px;                      //width of pics
+    height:0;
+    list-style: none;
   }
 }

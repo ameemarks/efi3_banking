@@ -4452,7 +4452,7 @@ a {
       border-radius: 5px; }
 
 .login_background {
-  background-image: url("../pics/login_page/background_container.png");
+  background-image: url("../images/login_page/background_container.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -4831,9 +4831,51 @@ input.cmn-toggle-round-flat:checked + label:after {
     box-sizing: content-box; }
 
 .account_options_elem {
-  border: 1px solid black;
+  list-style: none;
+  border-radius: 5px;
   width: 150px;
-  height: 150px; }
+  height: 150px;
+  background-image: url("../images/dashboard/icons/adding_banks.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.percentage, .stars, .account_option_name {
+  z-index: 3;
+  position: absolute;
+  padding: 10px;
+  color: white; }
+
+.percentage {
+  font-weight: 500;
+  font-size: 1.5rem; }
+
+.stars {
+  right: 0; }
+
+.account_option_name {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: 500;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.progressing_color {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background-color: #13bdd2;
+  z-index: 2;
+  top: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.progressing_image {
+  border-radius: 5px; }
 
 .container {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
@@ -4890,8 +4932,15 @@ h3 {
   font-weight: 700; }
 
 .flex_container {
+  margin: 0;
   display: flex;
-  flex-flow: row; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .flex_container .filling_empty_space_childs {
+    width: 150px;
+    height: 0;
+    list-style: none; }
 
 body {
   font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;

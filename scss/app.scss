@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import '../bower_components/foundation-sites/scss/foundation';
-@import '../bower_components/motion-ui/motion-ui';
+@import '../bower_components/motion-ui/motion-ui.scss';
 
 @include foundation-global-styles;
 @include foundation-grid;
