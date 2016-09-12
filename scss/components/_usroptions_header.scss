@@ -9,6 +9,8 @@
 }
 
 .mail_box {
+  transition: all .2s ease-in-out;
+
   span {
     position: absolute;
     bottom: 2px;
@@ -22,6 +24,10 @@
     left: 0;
   }
 
+}
+
+.mail_box:hover {
+  transform: scale(1.1);
 }
 
 .messageCount {

@@ -1,0 +1,70 @@
+/* Media queries hiding nav for medium and large screens */
+@media screen and (min-width:640px) {
+  .topnav {
+    display: none;
+  }
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+  li {
+    float: left;
+
+    /* Hide all list items, except for the first one ("Home") */
+    &:not(:first-child) {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      color: $fontColor;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    a:hover {
+      background-color: $hoverLighterColor;
+    }
+  }
+
+}
+
+
+/* Show the list item that contains the link to open and close the topnav (.hamburger_icon) */
+ul.topnav li.hamburger_icon {
+  float: right;
+  display: inline-block;
+}
+
+/* Class .responsive is added after clicking on .hamburger_icon.*/
+ul.topnav.responsive {
+  position: relative;
+
+  li.hamburger_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  li {
+    float: none;
+    display: inline;
+
+    a {
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+.hamburger_icon a img {
+  width: 2rem;
+}

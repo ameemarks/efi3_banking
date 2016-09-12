@@ -4452,6 +4452,9 @@ a {
     .avatar_square a img {
       border-radius: 5px; }
 
+.tooltip {
+  border-radius: 5px; }
+
 .login_background {
   background-image: url("../images/login_page/background_container.png");
   background-repeat: no-repeat;
@@ -4507,7 +4510,7 @@ a {
     margin-right: 0; }
 
   .option_button {
-    padding: auto 10px; } }
+    padding: 8px 10px; } }
 .options {
   list-style-type: none;
   text-align: left;
@@ -4579,6 +4582,9 @@ a {
     .menu li:hover a:hover {
       color: white; }
 
+@media screen and (max-width: 639px) {
+  .menu {
+    display: none; } }
 .nav_icon {
   margin: 10px auto; }
   .nav_icon img {
@@ -4787,15 +4793,20 @@ input.cmn-toggle-round-flat:checked + label:after {
   .usroptions a img {
     height: 20px; }
 
-.mail_box span {
-  position: absolute;
-  bottom: 2px;
-  left: 10px;
-  z-index: 1; }
-.mail_box a {
-  position: absolute;
-  top: -17px;
-  left: 0; }
+.mail_box {
+  transition: all .2s ease-in-out; }
+  .mail_box span {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    z-index: 1; }
+  .mail_box a {
+    position: absolute;
+    top: -17px;
+    left: 0; }
+
+.mail_box:hover {
+  transform: scale(1.1); }
 
 .messageCount {
   background-color: #e81c7b;
@@ -4812,6 +4823,9 @@ input.cmn-toggle-round-flat:checked + label:after {
 .dashboard_header_container {
   background-color: #13bdd2;
   max-height: 110px; }
+
+.dashboard_header_container_small {
+  background-color: #333; }
 
 .usrname {
   text-align: left;
@@ -4930,6 +4944,54 @@ input.cmn-toggle-round-flat:checked + label:after {
 
 .hidden {
   display: none; }
+
+/* Media queries hiding nav for medium and large screens */
+@media screen and (min-width: 640px) {
+  .topnav {
+    display: none; } }
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+  .topnav li {
+    float: left;
+    /* Hide all list items, except for the first one ("Home") */ }
+    .topnav li:not(:first-child) {
+      display: none; }
+    .topnav li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px; }
+    .topnav li a:hover {
+      background-color: #555; }
+
+/* Show the list item that contains the link to open and close the topnav (.hamburger_icon) */
+ul.topnav li.hamburger_icon {
+  float: right;
+  display: inline-block; }
+
+/* Class .responsive is added after clicking on .hamburger_icon.*/
+ul.topnav.responsive {
+  position: relative; }
+  ul.topnav.responsive li.hamburger_icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+    ul.topnav.responsive li a {
+      display: block;
+      text-align: left; }
+
+.hamburger_icon a img {
+  width: 2rem; }
 
 .container {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
