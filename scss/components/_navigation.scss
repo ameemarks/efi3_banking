@@ -36,6 +36,12 @@
 
 }
 
+@media screen and (max-width:639px) {
+  .menu {
+    display: none;
+  }
+}
+
 .nav_icon {
   margin: 10px auto;
   img {

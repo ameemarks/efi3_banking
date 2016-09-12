@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efi3 banking solutions</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed: 100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+    <script src="js/button_unfinished.js"></script>
+    <script src="js/hamburger_menu.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="dashboard_header_container">
+        <div class="row">
+
+            <div class="small-2 large-1 large-offset-1 columns ">      <!-- logo EFI3 -->
+                <div class="header_logo">
+                    <a href="#"><img src="images/login_page/logo_efi3.png" aria-label="Efigence logo"></a>
+                </div>
+            </div>
+
+            <div class=" small-2 large-1 columns">     <!-- avatar -->
+                <div class="avatar_square">
+                    <a href="#" class="has-tip" data-tooltip aria-haspopup="true" data-options="disable_for_touch:true" title="Tooltip for user">
+                        <img src="images/dashboard/selfie.jpg" alt="" aria-label="User picture">
+                    </a>
+                </div>
+            </div>
+
+            <div class=" small-4 medium-2 columns">                   <!-- name + mail + settings -->
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <span class="usrname">Jan Kowalski</span>
+                    </div>
+                </div>
+
+                <div class="row collapse">
+                    <div class="small-3 medium-4 large-2 columns">
+                            <span class="usroptions mail_box">
+                                <span class="badge messageCount" aria-describedby="messageCount">2</span>
+                                <a href="#" aria-label="Mail box"><img src="images/icons/mail.png"></a>
+                            </span>
+                    </div>
+                    <div class="small-3 medium-4 large-2 columns">
+                            <span class="usroptions settings">
+                                <a href="#" aria-label="Settings"><img src="images/icons/settings.png"></a>
+                            </span>
+                    </div>
+                    <div class="small-3 medium-4 large-2 columns end">
+                            <span class="usroptions award">
+                                <a href="#" aria-label="Award"><img src="images/icons/award_ribbon.png"></a>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="small-2 medium-4 large-3 columns">           <!-- nav -->
+
+                <!--<div class="title-bar" data-responsive-toggle="header_navigation" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle></button>
+                </div>-->
+
+                <nav id="header_navigation" role="navigation">
+                    <ul class="menu" id="menu_list">
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/home.png" alt="">
+                                </div>
+                                <span class="nav_name">HOME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/analyse.png" alt="">
+                                </div>
+                                <span class="nav_name">ANALYSE</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/plan.png" alt="">
+                                </div>
+                                <span class="nav_name">PLAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/earn.png" alt="">
+                                </div>
+                                <span class="nav_name">EARN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="small-3 medium-2 large-3 column end">           <!-- search + off -->
+                <div class="search_power_outer_container">
+                    <div class="search_power_inner_container"> <!-- container-->
+                            <span class="power_icon">
+                                <a href="#" aria-label="LOG OUT"><img src="images/icons/power.png" alt="LOG OUT"></a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard_header_container_small">
+        <div class="row collapse">
+            <div class="small-11 columns end">
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()"><img src="images/icons/menu_white.png" alt="MENU"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+<section class="summary_container">                             <!-- SEKCJA PODSUMOWANIE UŻYTKOWNIKA -->
+
+    <div class="row"></div>
+
+    <div class="row">
+        <div class="small-12 medium-7 large-6 columns large-offset-1">      <!-- PODSUMOWANIE -->
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1 class="page_name">Grywalizacja</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns">
+                    <h2 class="rank_name">Miejsce w rankingu</h2>
+                </div>
+                <div class="small-4 columns">
+                    <h2 class="rank_name">Zadanie wykonane</h2>
+                </div>
+                <div class="small-4 columns">
+                    <h2 class="rank_name">Zdobyte odznaki</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns">
+                    <span class="summary_values" aria-label="Miejsce w rankingu">100</span>
+                </div>
+                <div class="small-4 columns">
+                    <span class="summary_values" aria-label="Zadanie wykonane">1</span><span> z 18</span>
+                </div>
+                <div class="small-4 columns">
+                    <span class="summary_values" aria-label="Zdobyte odznaki">1</span><span> z 36</span>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-5 large-4 columns end">                 <!-- RODZAJ PODGLĄDU -->
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="buttons_container">
+                        <span>Pokaż</span>
+                        <a href="#" class="option_button button" id="button_all" role="button">WSZYSTKIE</a>
+                        <a href="#" class="option_button secondary button" id="button_unfinished" role="button">NIEUKOŃCZONE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<script src="js/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.core.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/what-input/what-input.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.js"></script>
+<script src="js/app.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

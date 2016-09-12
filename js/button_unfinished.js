@@ -10,7 +10,7 @@ $(document).ready (function() {
 
     function klikanie (button, elem, hidden) {
 
-        $(button).on("click", function(event){
+        $(button).on("click touch", function(event){
             event.preventDefault();
 
             for (i=0; i < elem.length; i++) {
