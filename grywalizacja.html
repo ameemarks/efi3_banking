@@ -10,6 +10,7 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+    <script src="js/button_unfinished.js"></script>
 
 </head>
 
@@ -43,17 +44,17 @@
                             <span class="usroptions mail_box">
                                 <!--<span aria-describedby="messageCount">Unread Messages</span>-->
                                 <span class="badge messageCount">2</span>
-                                <a href="#"><img src="images/dashboard/icons/mail.png"></a>
+                                <a href="#"><img src="images/icons/mail.png"></a>
                             </span>
                         </div>
                         <div class="small-3 medium-4 large-2 columns">
                             <span class="usroptions settings">
-                                <a href="#"><img src="images/dashboard/icons/settings.png"></a>
+                                <a href="#"><img src="images/icons/settings.png"></a>
                             </span>
                         </div>
                         <div class="small-3 medium-4 large-2 columns end">
                             <span class="usroptions award">
-                                <a href="#"><img src="images/dashboard/icons/award_ribbon.png"></a>
+                                <a href="#"><img src="images/icons/award_ribbon.png"></a>
                             </span>
                         </div>
                     </div>
@@ -71,7 +72,7 @@
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/dashboard/icons/home.png">
+                                        <img src="images/icons/home.png">
                                     </div>
                                     <span class="nav_name">HOME</span>
                                 </a>
@@ -79,7 +80,7 @@
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/dashboard/icons/analyse.png">
+                                        <img src="images/icons/analyse.png">
                                     </div>
                                     <span class="nav_name">ANALYSE</span>
                                 </a>
@@ -87,7 +88,7 @@
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/dashboard/icons/plan.png">
+                                        <img src="images/icons/plan.png">
                                     </div>
                                     <span class="nav_name">PLAN</span>
                                 </a>
@@ -95,7 +96,7 @@
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/dashboard/icons/earn.png">
+                                        <img src="images/icons/earn.png">
                                     </div>
                                     <span class="nav_name">EARN</span>
                                 </a>
@@ -110,7 +111,7 @@
                         <div class="search_power_inner_container"> <!-- container-->
 
                                 <span class="power_icon">
-                                    <a href="#"><img src="images/dashboard/icons/power.png"></a>
+                                    <a href="#"><img src="images/icons/power.png"></a>
                                 </span>
 
                         </div>
@@ -129,21 +130,21 @@
         <div class="row"></div>
 
         <div class="row">
-            <div class="small-12 medium-6 large-6 columns large-offset-1">      <!-- PODSUMOWANIE -->
+            <div class="small-12 medium-7 large-6 columns large-offset-1">      <!-- PODSUMOWANIE -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <h1>Grywalizacja</h1>
+                        <h1 class="page_name">Grywalizacja</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="small-4 columns">
-                        <h2>Miejsce w rankingu</h2>
+                        <h2 class="rank_name">Miejsce w rankingu</h2>
                     </div>
                     <div class="small-4 columns">
-                        <h2>Zadanie wykonane</h2>
+                        <h2 class="rank_name">Zadanie wykonane</h2>
                     </div>
                     <div class="small-4 columns">
-                        <h2>Zdobyte odznaki</h2>
+                        <h2 class="rank_name">Zdobyte odznaki</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -158,12 +159,14 @@
                     </div>
                 </div>
             </div>
-            <div class="small-12 medium-6 large-4 columns end">                 <!-- RODZAJ PODGLĄDU -->
+            <div class="small-12 medium-5 large-4 columns end">                 <!-- RODZAJ PODGLĄDU -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <span>Pokaż</span>
-                        <a href="#" class="option_button button">WSZYSTKIE</a>
-                        <a href="#" class="option_button secondary button">NIEUKOŃCZONE</a>
+                        <div class="buttons_container">
+                            <span>Pokaż</span>
+                            <a href="#" class="option_button button" id="button_all">WSZYSTKIE</a>
+                            <a href="#" class="option_button secondary button" id="button_unfinished">NIEUKOŃCZONE</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,46 +177,54 @@
     <section class="account_options_container">                                 <!--  MOŻLIWOŚCI KONTA -->
         <div class="row">
             <div class="small-12 columns large-offset-1">
-                <h3><span class="bolderH3">Odkryj</span> zaskakujące możliwości swojego konta</h3>
+                <h3 class="account_options_title"><span class="bolderH3">Odkryj</span> zaskakujące możliwości swojego konta</h3>
             </div>
         </div>
         <div class="row">
             <div class="small-12 large-10 columns large-offset-1 end">
                 <ul class="flex_container">
-                    <li class="account_options_elem flex_item">
-                        <span class="percentage">48%</span>
-                        <span class="stars"><img src="images/dashboard/icons/star.png"></span>
+                    <li class="account_options_elem flex_item" data-unfinished="false">
+                        <span class="percentage with_picture"><img src="images/icons/tick.png"></span>
                         <span class="progressing_image"><img src="images/grywalizacja/runner.png"></span>
-                        <span class="progressing_color"></span>
-                        <span class="account_option_name">Pierwsze logowanie</span>
+                        <span class="elem_name with_picture">Pierwsze logowanie</span>
                     </li>
 
-                    <li class="account_options_elem flex_item">
-                        <span class="percentage">%</span>
-                        <span class="stars"><img src="images/dashboard/icons/star.png"></span>
-                        <span class="progressing_image"><img src="images/grywalizacja/runner.png"></span>
-                        <span class="progressing_color"></span>
-                        <span class="account_option_name">Pierwsze logowanie</span>
+                    <li class="account_options_elem flex_item" data-unfinished="true">
+                        <span class="percentage">0%</span>
+                        <span class="lock"><img src="images/icons/lock.png"></span>
+                        <span class="elem_name">Zarządzanie wydatkami</span>
                     </li>
-                    <li class="account_options_elem flex_item"></li>
-                    <li class="account_options_elem flex_item"></li>
-                    <li class="account_options_elem flex_item"></li>
-                    <li class="account_options_elem flex_item"></li>
-                    <li class="filling_empty_space_childs"></li>
-                    <li class="filling_empty_space_childs"></li>
-                    <li class="filling_empty_space_childs"></li>
+
+                    <li class="account_options_elem flex_item" data-unfinished="true">
+                        <span class="percentage">0%</span>
+                        <span class="elem_name">Zarządzanie budżetem</span>
+                    </li>
+
+                    <li class="account_options_elem flex_item" data-unfinished="true">
+                        <span class="percentage with_picture">10%</span>
+                        <span class="progressing_image"><img src="images/grywalizacja/aim.png"></span>
+                        <span class="progressing_color"></span>
+                        <span class="elem_name with_picture">Cele oszczędnościowe</span>
+                    </li>
+
+                    <li class="account_options_elem flex_item" data-unfinished="true">
+                        <span class="percentage with_picture">48%</span>
+                        <span class="progressing_image"><img src="images/grywalizacja/tie.png"></span>
+                        <span class="progressing_color"></span>
+                        <span class="elem_name with_picture">Ustawienia osobiste</span>
+                    </li>
+
+                    <li class="account_options_elem flex_item" data-unfinished="true">
+                        <span class="percentage">0%</span>
+                        <span class="elem_name">Dodawanie banków</span>
+                    </li>
+
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
                 </ul>
-
-                <!-- ZDJĘCIA W GRIDZIE
-                <div class="row">
-                    <div class="small-6 medium-4 large-2 columns">Obrazek 1</div>
-                    <div class="small-6 medium-4 large-2 columns">Obrazek 2</div>
-                    <div class="small-6 medium-4 large-2 columns">Obrazek 3</div>
-                    <div class="small-6 medium-4 large-2 columns">Obrazek 4</div>
-                    <div class="small-6 medium-4 large-2 columns">Obrazek 5</div>
-                    <div class="small-6 medium-4 large-2 columns">Obrazek 6</div>
-                </div>
-                -->
 
             </div>
         </div>
@@ -222,11 +233,113 @@
     <section class="awards_container">                                      <!-- ODZNAKI TRANSAKCYJNE  -->
         <div class="row">
             <div class="small-12 columns large-offset-1">
-                <h3><span class="bolderH3">Korzystaj</span> tak jak lubisz i zbieraj odznaki transakcyjne</h3>
+                <h3 class="awards_title"><span class="bolderH3">Korzystaj</span> tak jak lubisz i zbieraj odznaki transakcyjne</h3>
             </div>
         </div>
         <div class="row">
+            <div class="small-12 large-10 columns large-offset-1 end">
+                <ul class="flex_container">
+                    <li class="awards_elem flex_item" data-unfinished="false">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/white_star.png"></span>
+                            <span class="stars"><img src="images/icons/white_star.png"></span>
+                            <span class="stars"><img src="images/icons/white_star.png"></span>
+                        </span>
+                        <span class="progressing_image"><img src="images/grywalizacja/keys.png"></span>
+                        <span class="elem_name with_picture">Regularne logowanie</span>
+                    </li>
 
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="percentage with_picture">76%</span>
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/white_star.png"></span>
+                            <span class="stars"><img src="images/icons/white_star.png"></span>
+                        </span>
+                        <span class="progressing_image"><img src="images/grywalizacja/pig.png"></span>
+                        <span class="progressing_color"></span>
+                        <span class="elem_name with_picture">Sprytne oszczędzanie</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Zapraszanie znajomych</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Tagowanie transakcji</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Lokaty</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Import danych</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Transakcje kartą</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Personalizacja</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Zakupy online</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Kredyty</span>
+                    </li>
+
+                    <li class="awards_elem flex_item" data-unfinished="true">
+                        <span class="stars_container">
+                            <span class="stars"><img src="images/icons/star.png"></span>
+                        </span>
+                        <span class="elem_name">Przelewy zdefiniowane</span>
+                    </li>
+
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+                    <li class="filling_empty_space_childs" data-unfinished="true"></li>
+
+
+                    <!-- COMPLETE ACCOUNT_OPTIONS_ELEM
+                    <li class="account_options_elem flex_item" data-unfinished="false">
+                        <span class="percentage"><img src="images/icons/tick.png"></span>
+                        <span class="stars"><img src="images/icons/star.png"></span>
+                        <span class="progressing_image"><img src="images/grywalizacja/runner.png"></span>
+                        <span class="progressing_color"></span>
+                        <span class="account_option_name">Pierwsze logowanie</span>
+                    </li>
+                    -->
+                </ul>
+
+            </div>
         </div>
     </section>
 

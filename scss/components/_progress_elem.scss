@@ -1,34 +1,50 @@
 .account_options_elem {
-  list-style: none;
-  border-radius: 5px;
-  width: 150px;
-  height: 150px;
-  background: {
-    image: url("../images/dashboard/icons/adding_banks.png");
-    size: contain;
-    repeat: no-repeat;
-  }
-  position: relative;
-
+  @include progress_elem(url("../images/icons/adding_banks.png"))
 }
 
-.percentage, .stars, .account_option_name {
+.awards_elem {
+  @include progress_elem(url("../images/icons/prize_badge.png"));
+}
+
+.percentage, .lock, .stars_container, .elem_name {
   z-index: 3;
   position: absolute;
   padding: 10px;
-  color: white;
+  color: $hoverColor;
+}
+
+.elem_name {
+  padding: 10px 5px;
+}
+
+.with_picture {
+  color: $fontColor
 }
 
 .percentage {
   font-weight: 500;
   font-size: 1.5rem;
+  max-width: 4rem;
+  line-height: 1;
 }
 
-.stars {
+.lock {
   right: 0;
+  max-width: 2.5rem;
 }
 
-.account_option_name {
+.stars_container {
+  right: 0;
+  width: 5rem;
+  .stars {
+    float: right;
+    display: inline-block;
+    max-width: 30%;
+    padding: 0 1px;
+  }
+}
+
+.elem_name {
   font-size: 0.9rem;
   line-height: 1rem;
   font-weight: 500;
@@ -42,7 +58,7 @@
   position: absolute;
   display: block;
   height: 100%;
-  width: 50%;
+  width: 100%;
   right: 0;
   background-color: $mainColor;
   z-index: 2;
@@ -51,6 +67,22 @@
   border-bottom-right-radius: 5px;
 }
 
+.account_options_elem:nth-child(4) > .progressing_color {
+  width: 90%;
+}
+
+.account_options_elem:nth-child(5) > .progressing_color {
+  width: 52%;
+}
+
+.awards_elem:nth-child(2) > .progressing_color {
+  width: 34%;
+}
+
 .progressing_image img{
   border-radius: 5px;
+}
+
+.hidden {
+  display: none;
 }

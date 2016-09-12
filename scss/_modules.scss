@@ -1,0 +1,14 @@
+/* --- PLIK PROGRES_ELEM, PODSTAWOWE TŁO ELEMENTÓW --- */
+@mixin progress_elem($bcg_image) {
+  list-style: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  background: {
+    image: $bcg_image;
+    size: contain;
+    repeat: no-repeat;
+  }
+  position: relative;
+  margin-bottom: 10px;
+}
