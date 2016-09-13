@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
     <script src="js/button_unfinished.js"></script>
     <script src="js/hamburger_menu.js"></script>
+    <script src="js/tick.js"></script>
 </head>
 
 <body>
@@ -111,9 +112,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
         <div class="dashboard_header_container_small">          <!-- nav for small screeens -->
@@ -135,8 +134,6 @@
     </header>
 
     <section class="summary_container">                             <!-- SEKCJA PODSUMOWANIE UŻYTKOWNIKA -->
-
-        <div class="row"></div>
 
         <div class="row">
             <div class="small-12 medium-7 large-6 columns large-offset-1">      <!-- PODSUMOWANIE -->
@@ -191,8 +188,9 @@
         </div>
         <div class="row">
             <div class="small-12 large-10 columns large-offset-1 end">
-                <ul class="flex_container">
+                <ul class="flex_container" id="box_account_options_parent">
                     <li class="account_options_elem flex_item" data-unfinished="false">
+                        <div class="front"></div>
                         <span class="tick">
                             <img src="images/icons/tick.png" alt="V" aria-label="completed">
                         </span>
@@ -200,22 +198,25 @@
                         <span class="elem_name with_picture">Pierwsze logowanie</span>
                     </li>
                     <li class="account_options_elem flex_item" data-unfinished="true">
-                        <span class="tick">
-                            <img src="images/icons/tick.png" alt="V" aria-label="completed">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
                         </span>
                         <span class="percentage">0%</span>
                         <span class="lock"><img src="images/icons/lock.png" alt=""></span>
                         <span class="elem_name">Zarządzanie wydatkami</span>
                     </li>
                     <li class="account_options_elem flex_item" data-unfinished="true">
-                        <span class="tick">
-                            <img src="images/icons/tick.png" alt="V" aria-label="completed">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
                         </span>
                         <span class="percentage">0%</span>
                         <span class="elem_name">Zarządzanie budżetem</span>
                     </li>
                     <li class="account_options_elem flex_item" data-unfinished="true">
-                        <span class="tick">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
                             <img src="images/icons/tick.png" alt="V" aria-label="completed">
                         </span>
                         <span class="percentage with_picture">10%</span>
@@ -224,7 +225,8 @@
                         <span class="elem_name with_picture">Cele oszczędnościowe</span>
                     </li>
                     <li class="account_options_elem flex_item" data-unfinished="true">
-                        <span class="tick">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
                             <img src="images/icons/tick.png" alt="V" aria-label="completed">
                         </span>
                         <span class="percentage with_picture">48%</span>
@@ -233,8 +235,9 @@
                         <span class="elem_name with_picture">Ustawienia osobiste</span>
                     </li>
                     <li class="account_options_elem flex_item" data-unfinished="true">
-                        <span class="tick">
-                            <img src="images/icons/tick.png" alt="V" aria-label="completed">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
                         </span>
                         <span class="percentage">0%</span>
                         <span class="elem_name">Dodawanie banków</span>
@@ -258,8 +261,12 @@
         </div>
         <div class="row">
             <div class="small-12 large-10 columns large-offset-1 end">
-                <ul class="flex_container">
+                <ul class="flex_container" id="box_awards_parent">
                     <li class="awards_elem flex_item" data-unfinished="false">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/white_star.png" alt="*"></span>
                             <span class="stars"><img src="images/icons/white_star.png" alt="*"></span>
@@ -269,6 +276,10 @@
                         <span class="elem_name with_picture">Regularne logowanie</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="percentage with_picture">76%</span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/white_star.png" alt="*"></span>
@@ -279,54 +290,90 @@
                         <span class="elem_name with_picture">Sprytne oszczędzanie</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Zapraszanie znajomych</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Tagowanie transakcji</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Lokaty</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Import danych</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Transakcje kartą</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Personalizacja</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Zakupy online</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>
                         <span class="elem_name">Kredyty</span>
                     </li>
                     <li class="awards_elem flex_item" data-unfinished="true">
+                        <div class="front"></div>
+                        <span class="tick tick_hidden">
+                            <img src="images/icons/tick_black.png" alt="V" aria-label="completed">
+                        </span>
                         <span class="stars_container">
                             <span class="stars"><img src="images/icons/star.png" alt="*"></span>
                         </span>

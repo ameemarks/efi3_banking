@@ -6,39 +6,39 @@
  */
 
 $(document).ready (function() {
-    //var buttonAll = document.getElementById("button_all");
-    //var buttonUnfinished = document.getElementById("button_unfinished");
-    var optionsElem = document.getElementsByClassName("account_options_elem");
-    //var awardsElem = document.getElementsByClassName("awards_elem");
 
-    $.each(optionsElem , function (index, value){
-        console.log(index + ':' + value);
-    });
-    //sitepoint jquery each
+    /*
+    *ignorowanie kliknięć na rodzica poprzez warunek: element, na który się klika ma być różny od elementu z listenerem
+    *if (e.target !== e.currentTarget) {}
+    *
+    *rodzeństwo elementu, na który się klika (div z klasą front), posiadające klasę "tick":
+    *var clickedItemTick = $(e.target).siblings(".tick");
+    *
+     */
 
-    /* function klikTick (box) {
+    var theParent = document.querySelector("#box_account_options_parent");
+    theParent.addEventListener("click", makeTick, false);
 
-        $(box).on("click touch", function(){
-            //event.preventDefault();
-            alert("działa!");
-            //$(this).addClass("tick");
+    var awardsParent = document.querySelector("#box_awards_parent");
+    awardsParent.addEventListener("click", makeTick, false);
 
-              for (i=0; i < elem.length; i++) {
+    function makeTick(e) {
 
-                    if (elem[i].dataset.unfinished == "false") {
-                        if (hidden) {
-                            $(elem[i]).fadeOut(1000);        //addClass("hidden")
-                        }
-                        else {
-                            $(elem[i]).fadeIn(1000);        //removeClass("hidden")
-                        }
-                    }
+        if (e.target !== e.currentTarget) {
 
-        });
+            var clickedItemTick = $(e.target).siblings(".tick");
+            var clickedItemPercentage = $(e.target).siblings(".percentage");
+
+            if (clickedItemTick.hasClass("tick_hidden")) {
+                clickedItemPercentage.addClass("percentage_hidden");
+                clickedItemTick.removeClass("tick_hidden");
+            }
+            else {
+                clickedItemTick.addClass("tick_hidden");
+                clickedItemPercentage.removeClass("percentage_hidden");
+            }
+
+        }
+        e.stopPropagation();
     }
-
-    klikTick (optionsElem);
-    klikTick (optionsElem);
-    klikTick (awardsElem);
-    klikTick (awardsElem);  } */
 });

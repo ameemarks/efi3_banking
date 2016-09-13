@@ -47,3 +47,11 @@
     transform: rotate(360deg);
   }
 }
+
+.award a:hover {
+  background: {
+    image: url("../images/icons/award_ribbon_hover.png");
+    repeat: no-repeat;
+    size: cover;
+  }
+}

@@ -17,10 +17,10 @@ $(document).ready (function() {
 
                 if (elem[i].dataset.unfinished == "false") {
                     if (hidden) {
-                        $(elem[i]).fadeOut(1000);        //addClass("hidden")
+                        $(elem[i]).fadeOut(1000);
                     }
                     else {
-                        $(elem[i]).fadeIn(1000);        //removeClass("hidden")
+                        $(elem[i]).fadeIn(1000);
                     }
                 }
             }

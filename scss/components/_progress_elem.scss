@@ -20,7 +20,7 @@
 }
 
 .with_picture {
-  color: $fontColor
+  color: $fontColor;
 }
 
 .percentage, .tick {
@@ -28,6 +28,14 @@
   font-size: 1.5rem;
   max-width: 4rem;
   line-height: 1;
+}
+
+.tick_hidden {
+  display: none;
+}
+
+.percentage_hidden {
+  display: none;
 }
 
 .account_options_elem:hover, .awards_elem:hover {
@@ -75,6 +83,24 @@
   border-bottom-right-radius: 5px;
 }
 
+.progressing_image img{
+  border-radius: 5px;
+}
+
+.front {
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $fontColor;
+  border-radius: 5px;
+}
+
+.front:hover {
+  opacity: 0.3;
+}
+
 /* -- ELEMS WITH PARTIALLY HIDDEN BCG PIC WITH BY BLUE'ISH "PROGRESS BAR" -- */
 .account_options_elem:nth-child(4) > .progressing_color {
   width: 90%;
@@ -86,12 +112,4 @@
 
 .awards_elem:nth-child(2) > .progressing_color {
   width: 34%;
-}
-
-.progressing_image img{
-  border-radius: 5px;
-}
-
-.hidden {
-  display: none;
 }
