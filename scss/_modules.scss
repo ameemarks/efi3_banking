@@ -1,3 +1,16 @@
+$mainFont: 'Roboto', sans-serif;
+
+/* -- PLIK BUTTON -- */
+@mixin button($bt_width, $bt_bcg_color, $bt_font_color, $bt_font_size, $padding_vert, $padding_horiz) {
+  width: $bt_width;
+  background-color: $bt_bcg_color;
+  color: $bt_font_color;
+  border-radius: 5px;
+  font-size: $bt_font_size;
+  padding: $padding_vert $padding_horiz;
+}
+
+
 /* --- PLIK PROGRES_ELEM, PODSTAWOWE TŁO ELEMENTÓW --- */
 @mixin progress_elem($bcg_image) {
   list-style: none;

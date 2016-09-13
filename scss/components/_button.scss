@@ -1,14 +1,13 @@
 /* -- BUTTONY Z LOGIN PAGE -- */
 .button {
-  width: 120px;
+  @include button(120px, $fontColor, $hoverColor, 0.9rem, 10px, 5px);
   height: 30px;
-  background-color: $fontColor;
-  color: $hoverColor;
   margin-top: 20px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  padding: 10px 5px;
   box-sizing: padding-box;
+}
+
+.button.warning {
+  background-color: $mainColor;
 }
 
 .button:focus{
@@ -17,22 +16,13 @@
 }
 
 .button:hover {
-  background-color: $lightMainColor;
-  color: $hoverColor;
+  background-color: $hoverLighterColor;
+  color: $fontColor;
 }
 
 /* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
-
-
-                          /* --- !!!!ZROBIĆ MIXIN I WYWALIĆ CZĘŚĆ KODU!!! --- */
-
 .option_button {
-  width: auto;
-  background-color: $mainColor;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  padding: 8px 15px;
-  color: $fontColor;
+  @include button(auto, $mainColor, $fontColor, 0.8rem, 8px, 15px);
 }
 
 #button_all {

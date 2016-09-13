@@ -1,5 +1,12 @@
 .container {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
   color: $fontColor;
+}
 
+.login_background {
+  background: {
+    image: url("../images/login_page/background_container.png");
+    repeat: no-repeat;
+    size: cover;
+  }
 }
