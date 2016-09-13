@@ -53,19 +53,15 @@
 @import "reset.css";
 
 //Modules - zmienne, mixiny, mapy
-@import "variables";
 @import "colors";
 @import "modules";
-@import "typography";
 
 //Components - stałe elementy strony
-@import "components/_apla";
+@import "components/apla";
 @import "components/avatar";
-@import "components/background";
 @import "components/button";
 @import "components/footer";
 @import "components/form_elems";
-@import "components/icons";
 @import "components/logo";
 @import "components/navigation";
 @import "components/search";

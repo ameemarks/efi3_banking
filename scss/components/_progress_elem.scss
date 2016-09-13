@@ -1,3 +1,5 @@
+/* -- KWADRATOWE ELEMENTY ZE STRONY GRYWALIZACJA -- */
+
 .account_options_elem {
   @include progress_elem(url("../images/icons/adding_banks.png"))
 }
@@ -6,7 +8,7 @@
   @include progress_elem(url("../images/icons/prize_badge.png"));
 }
 
-.percentage, .lock, .stars_container, .elem_name {
+.tick, .percentage, .lock, .stars_container, .elem_name {
   z-index: 3;
   position: absolute;
   padding: 10px;
@@ -21,11 +23,17 @@
   color: $fontColor
 }
 
-.percentage {
+.percentage, .tick {
   font-weight: 500;
   font-size: 1.5rem;
   max-width: 4rem;
   line-height: 1;
+}
+
+.account_options_elem:hover, .awards_elem:hover {
+  -webkit-box-shadow: 0 0 10px 0 #555;
+  -moz-box-shadow: 0 0 10px 0 #555;
+  box-shadow: 0 0 10px 0 #555;
 }
 
 .lock {
@@ -67,6 +75,7 @@
   border-bottom-right-radius: 5px;
 }
 
+/* -- ELEMS WITH PARTIALLY HIDDEN BCG PIC WITH BY BLUE'ISH "PROGRESS BAR" -- */
 .account_options_elem:nth-child(4) > .progressing_color {
   width: 90%;
 }

@@ -4415,6 +4415,7 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   animation-delay: 700ms !important; }
 
+/* -- PLIK BUTTON -- */
 /* --- PLIK PROGRES_ELEM, PODSTAWOWE TŁO ELEMENTÓW --- */
 .green_background {
   background-color: #13bdd2;
@@ -4424,7 +4425,9 @@ table.hover tr:nth-of-type(even):hover {
 .box_title {
   padding-top: 20px;
   font-size: 2.5rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300; }
 
 .box_subtitle {
   font-size: 1rem;
@@ -4455,40 +4458,37 @@ a {
 .tooltip {
   border-radius: 5px; }
 
-.login_background {
-  background-image: url("../images/login_page/background_container.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 /* -- BUTTONY Z LOGIN PAGE -- */
 .button {
   width: 120px;
-  height: 30px;
   background-color: white;
   color: #000;
-  margin-top: 20px;
   border-radius: 5px;
   font-size: 0.9rem;
   padding: 10px 5px;
+  height: 30px;
+  margin-top: 20px;
   box-sizing: padding-box; }
+
+.button.warning {
+  background-color: #13bdd2; }
 
 .button:focus {
   background-color: #13bdd2;
   color: white; }
 
 .button:hover {
-  background-color: #a7e9f1;
-  color: #000; }
+  background-color: #555;
+  color: white; }
 
 /* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
-/* --- !!!!ZROBIĆ MIXIN I WYWALIĆ CZĘŚĆ KODU!!! --- */
 .option_button {
   width: auto;
   background-color: #13bdd2;
+  color: white;
   border-radius: 5px;
   font-size: 0.8rem;
-  padding: 8px 15px;
-  color: white; }
+  padding: 8px 15px; }
 
 #button_all {
   margin-left: 20px;
@@ -4551,6 +4551,7 @@ a {
   margin-top: 10px;
   border-radius: 5px; }
 
+/* -- Logo ze strony LOGIN -- */
 .logo_pic {
   margin-top: 40px; }
 
@@ -4786,6 +4787,7 @@ input.cmn-toggle-round-flat:checked + label:after {
   margin-left: 60px;
   background-color: #8ce196; }
 
+/* -- HEADER ELEMS WITH OPTIONS FOR USER: MAIL BOX, SETTINGS, AWARDS -- */
 .usroptions {
   display: inline-block;
   position: relative;
@@ -4856,6 +4858,7 @@ input.cmn-toggle-round-flat:checked + label:after {
     height: 30px;
     box-sizing: content-box; }
 
+/* -- KWADRATOWE ELEMENTY ZE STRONY GRYWALIZACJA -- */
 .account_options_elem {
   list-style: none;
   border-radius: 5px;
@@ -4878,7 +4881,7 @@ input.cmn-toggle-round-flat:checked + label:after {
   position: relative;
   margin-bottom: 10px; }
 
-.percentage, .lock, .stars_container, .elem_name {
+.tick, .percentage, .lock, .stars_container, .elem_name {
   z-index: 3;
   position: absolute;
   padding: 10px;
@@ -4890,11 +4893,16 @@ input.cmn-toggle-round-flat:checked + label:after {
 .with_picture {
   color: white; }
 
-.percentage {
+.percentage, .tick {
   font-weight: 500;
   font-size: 1.5rem;
   max-width: 4rem;
   line-height: 1; }
+
+.account_options_elem:hover, .awards_elem:hover {
+  -webkit-box-shadow: 0 0 10px 0 #555;
+  -moz-box-shadow: 0 0 10px 0 #555;
+  box-shadow: 0 0 10px 0 #555; }
 
 .lock {
   right: 0;
@@ -4930,6 +4938,7 @@ input.cmn-toggle-round-flat:checked + label:after {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px; }
 
+/* -- ELEMS WITH PARTIALLY HIDDEN BCG PIC WITH BY BLUE'ISH "PROGRESS BAR" -- */
 .account_options_elem:nth-child(4) > .progressing_color {
   width: 90%; }
 
@@ -4996,6 +5005,11 @@ ul.topnav.responsive {
 .container {
   font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
   color: white; }
+
+.login_background {
+  background-image: url("../images/login_page/background_container.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /* SECTION: FINANCE LIFE STREAM */
 .stream_container {
