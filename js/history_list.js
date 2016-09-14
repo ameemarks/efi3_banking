@@ -41,14 +41,14 @@ $(document).ready(function() {
                 console.log(apiDateEdited);
 
 
-                var html = "<li><div class='row'><div class='small-2 columns'><div class='history_date'>" + apiDateEdited + "</div></div>" +
+                var html = "<li class='small-12 columns'><div class='row collapse history_elem'><div class='small-2 columns'><div class='history_date'>" + apiDateEdited + "</div></div>" +
                     "<div class='small-7 columns'>" +
                     "<div class='history_payment'>" +
                     "<div class='history_payment_transaction'>" + msg.content[i].description + "</div>" +
                     "<div class='history_payment_category'>" + msg.content[i].category + "</div>" +
                     "   </div>" +
                     "</div>" +
-                    "<div class='small-3 columns'><div class='history_value'>" + msg.content[i].amount + " " + msg.content[i].currency + "</div></div></div></li>";
+                    "<div class='small-3 columns'><div class='history_value'><span>" + msg.content[i].amount +"</span> " + msg.content[i].currency + "</div></div></div></li>";
 
                 $(".list").append(html);
             }

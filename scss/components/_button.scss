@@ -21,8 +21,23 @@
 }
 
 /* -- BUTTONY Z DASHBOARD I GRYWALIZACJA, OPCJE UŻYTKOWNIKA, PRAWY PANEL -- */
+.buttons_container {
+  margin-top: 30px;
+  float: right;
+}
+
+@media only screen and (max-width: 640px) {
+  .buttons_container {
+    float: left;
+  }
+}
+
 .option_button {
   @include button(auto, $mainColor, $fontColor, 0.8rem, 8px, 15px);
+}
+
+.option_button_dashboard {
+  @include button(80px, $mainColor, $fontColor, 0.9rem, 8px, 15px);
 }
 
 #button_all {

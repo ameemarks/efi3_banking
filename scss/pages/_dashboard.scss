@@ -1,38 +1,19 @@
 /* SECTION: FINANCE LIFE STREAM */
 
-.stream_container {
-  background-color: $majorBackgroundColor;
-  color: $hoverColor;
-  font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
-  text-align: left;
+.stream_container, .products_history_container {
+  @extend %sectionContainer;
+  //font-family: 'Roboto', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
 }
 
-.history_container {
-  background-color: white;
-  color: black;
-  max-height: 400px;        //robi się scroll, trzyma wysokośc
-
-  ul {
-    list-style: none;
-  }
-
+.products_history_container {
+  height: 350px;
+  padding-bottom: 30px;
 }
 
-h3 {
-  color: black;
-  float: left;
-  padding-left: 30px;
+.stream_chart {
+  margin: 15px 0;
 }
 
-.history_date {
-  background-color: blue;
-}
-
-.history_payment {
-  background-color: yellow;
-  height: 50px;
-}
-
-.history_value {
-  background-color: deeppink;
+.dashboard_buttons_container span {
+  margin-right: 10px;
 }

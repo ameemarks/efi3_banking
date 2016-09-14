@@ -55,6 +55,7 @@
 //Modules - zmienne, mixiny, mapy
 @import "colors";
 @import "modules";
+@import "typography";
 
 //Components - stałe elementy strony
 @import "components/apla";
@@ -68,23 +69,12 @@
 @import "components/switch_button";
 @import "components/usroptions_header";
 @import "components/header_elems";
+@import "components/history";
 @import "components/progress_elem";
 @import "components/hamburger";
+@import "components/product_box";
 
 //Pages - poszczególne części strony;
 @import "pages/login_site";
 @import "pages/dashboard";
 @import "pages/grywalizacja";
-
-body {
-  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  color: $fontColor;
-  text-align: center;
-
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
-  font-weight: 300;
-}
