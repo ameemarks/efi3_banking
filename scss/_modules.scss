@@ -1,5 +1,20 @@
 $mainFont: 'Roboto', sans-serif;
 
+/* -- PLIK TYPOGRAPHY, mixin h2 -- */
+@mixin hTwo ($H2_font_size){
+  font-size: $H2_font_size;
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+/* SECTION CONTAINER */
+%sectionContainer {
+  background-color: $majorBackgroundColor;
+  color: $hoverColor;
+  text-align: left;
+}
+
 /* -- PLIK BUTTON -- */
 @mixin button($bt_width, $bt_bcg_color, $bt_font_color, $bt_font_size, $padding_vert, $padding_horiz) {
   width: $bt_width;

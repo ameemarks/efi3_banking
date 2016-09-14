@@ -1,0 +1,39 @@
+.history_container {
+  max-height: 300px;        /* with "overflow: auto" creates scroll ONLY after list reaches bigger height */
+  overflow: auto;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  ul {
+    list-style: none;
+  }
+
+}
+
+
+/* -- ELEMENTS WITH CLASSES INCLUDED IN .js FILE: history_list -- */
+
+.history_date, .history_value {
+  background-color: $fontColor;
+  padding: 15px 0;
+  text-align: center;
+
+}
+
+.history_payment {
+  background-color: $fontColor;
+  height: 53px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.history_value {
+  span {
+    font-weight: bold;
+  }
+}
+
+.history_elem {
+  margin: 1px 0;
+}

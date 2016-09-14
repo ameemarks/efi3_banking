@@ -1,0 +1,59 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: $fontColor;
+  text-align: center;
+
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Condensed', sans-serif, 'existencelight', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+*:focus {
+  outline: {
+    color: #0a0a0a;
+    style: dotted;
+  }
+}
+
+/* -- GRYWALIZACJA -- */
+.page_name {
+  font-size: 3rem;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.rank_name {
+  @include hTwo (1rem);
+}
+
+.sum_name {
+  @include hTwo (1.5rem);
+}
+
+.subsection_name {
+  @include  hTwo (1rem);
+  padding-left: 0;
+}
+
+.sum_values {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.account_options_title, .awards_title {
+  font-size: 1rem;
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+.summary_values {
+  font-weight: 700;
+}
+
+.bolderH3 {
+  font-weight: 700;
+}

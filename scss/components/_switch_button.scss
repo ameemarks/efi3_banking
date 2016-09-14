@@ -1,3 +1,17 @@
+.switch_container {
+  margin-top: 50px;
+  float: right;
+
+  span {
+    display: inline-block;
+  }
+
+  .switch {
+    display: inline-block;
+    margin-bottom: -10px;
+  }
+}
+
 .cmn-toggle {
   position: absolute;
   margin-left: -9999px;
@@ -11,12 +25,13 @@
   user-select: none;
 }
 
+/* -- pierwsza, podstawowa warstwa na spodzie --*/
 input.cmn-toggle-round-flat + label {
   padding: 2px;
-  width: 120px;
-  height: 60px;
-  background-color: #dddddd;
-  border-radius: 60px;
+  width: 80px;
+  height: 35px;
+  //background-color: $switchGreen;   zielona obwódka, gdy guzik po lewej
+  border-radius: 5px;
   transition: background 0.4s;
 }
 input.cmn-toggle-round-flat + label:before,
@@ -31,22 +46,29 @@ input.cmn-toggle-round-flat + label:before {
   bottom: 2px;
   right: 2px;
   background-color: #fff;
-  border-radius: 60px;
+  border-radius: 5px;
   transition: background 0.4s;
+  content: "OFF ON";
+  word-spacing: 12px;
+  font-size: 1rem;
+  padding-left: 6px;
 }
+/* -- guzik w przesunięty na lewo -- */
 input.cmn-toggle-round-flat + label:after {
   top: 4px;
   left: 4px;
   bottom: 4px;
-  width: 52px;
-  background-color: #dddddd;
-  border-radius: 52px;
+  width: 40px;
+  background-color: $switchGreen;
+  border-radius: 5px;
   transition: margin 0.4s, background 0.4s;
 }
 input.cmn-toggle-round-flat:checked + label {
-  background-color: #8ce196;
+  background-color: #dddddd;
 }
+
+/* -- guzik w przesuwany na prawo -- */
 input.cmn-toggle-round-flat:checked + label:after {
-  margin-left: 60px;
-  background-color: #8ce196;
+  margin-left: 32px;
+  background-color: #dddddd;
 }

@@ -1,36 +1,5 @@
 .summary_container, .account_options_container, .awards_container {
-  background-color: $majorBackgroundColor;
-  color: $hoverColor;
-  text-align: left;
-}
-
-.page_name {
-  font-size: 3rem;
-  margin-top: 25px;
-  margin-bottom: 0;
-
-}
-
-.rank_name {
-  font-size: 1rem;
-  margin-top: 5px;
-  margin-bottom: 0;
-  line-height: 10px;
-}
-
-.account_options_title, .awards_title {
-  font-size: 1rem;
-  padding-left: 0;
-  margin-top: 30px;
-  margin-bottom: 3px;
-}
-
-.summary_values {
-  font-weight: 700;
-}
-
-.bolderH3 {
-  font-weight: 700;
+  @extend %sectionContainer;
 }
 
 .buttons_container {
