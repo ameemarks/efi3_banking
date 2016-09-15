@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efi3 banking solutions</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed: 100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cash_values.js"></script>
+    <script src="js/history_list.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div class="dashboard_header_container">
+        <div class="row">
+
+            <div class="small-2 large-1 large-offset-1 columns ">      <!-- logo EFI3 -->
+                <div class="header_logo">
+                    <a href="#"><img src="images/login_page/logo_efi3.png"></a>
+                </div>
+            </div>
+
+            <div class=" small-2 large-1 columns">     <!-- avatar -->
+                <div class="avatar_square">
+                    <a href="#" class="has-tip" data-tooltip aria-haspopup="true" data-options="disable_for_touch:true" title="Tooltip for user"><img src="images/dashboard/selfie.jpg"></a>
+                </div>
+            </div>
+
+            <div class=" small-4 medium-2 columns">                   <!-- name + mail + settings -->
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <span class="usrname">Jan Kowalski</span>
+                    </div>
+                </div>
+
+                <div class="row collapse">
+                    <div class="small-3 medium-4 large-2 columns">
+                            <span class="usroptions mail_box">
+                                <span class="badge messageCount" aria-describedby="messageCount">2</span>
+                                <a href="#"><img src="images/icons/mail.png"></a>
+                            </span>
+                    </div>
+                    <div class="small-3 medium-4 large-2 columns">
+                            <span class="usroptions settings">
+                                <a href="#"><img src="images/icons/settings.png"></a>
+                            </span>
+                    </div>
+                    <div class="small-3 medium-4 large-2 columns end">
+                            <span class="usroptions award">
+                                <a href="#"><img src="images/icons/award_ribbon.png"></a>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="small-2 medium-4 large-3 columns">           <!-- nav -->
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/home.png">
+                                </div>
+                                <span class="nav_name">HOME</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/analyse.png">
+                                </div>
+                                <span class="nav_name">ANALYSE</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/plan.png">
+                                </div>
+                                <span class="nav_name">PLAN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="nav_icon">
+                                    <img src="images/icons/earn.png">
+                                </div>
+                                <span class="nav_name">EARN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="small-2 large-3 column end">           <!-- search + off -->
+
+                <div class="search_power_outer_container">
+                    <div class="search_power_inner_container"> <!-- container-->
+                        <span class="search_icon"><img src="images/icons/search.png"></span>
+
+                            <span class="power_icon">
+                                <a href="#"><img src="images/icons/power.png"></a>
+                            </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section class="stream_container">
+
+    <div class="row"></div>
+
+    <div class="row">
+        <div class="small-12 medium-7 large-7 columns large-offset-1">    <!--finance life stream, values-->
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1 class="page_name">Finance life stream</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-3 columns">
+                    <h2 class="sum_name">Balance</h2>
+                </div>
+                <div class="small-4 columns">
+                    <h2 class="sum_name">Available funds</h2>
+                </div>
+                <div class="small-5 columns">
+                    <h2 class="sum_name">Scheduled payments</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-3 columns">
+                    <div id="balance" class="sum_values" aria-label="Balance"></div>
+                </div>
+                <div class="small-4 columns">
+                    <div id="funds" class="sum_values" aria-label="Available funds"></div>
+                </div>
+                <div class="small-5 columns">
+                    <div id="payments" class="sum_values" aria-label="Scheduled payments"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="small-12 medium-5 large-3 columns end">           <!--additional account options for user-->
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <div class="buttons_container dashboard_buttons_container">
+                        <span>Add</span>
+                        <a href="#" class="option_button_dashboard" role="button">BANK</a>
+                        <a href="#" class="option_button_dashboard" role="button">PAYMENT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <div class="switch_container">
+                        <span>Account analysis</span>
+                        <div class="switch">
+                            <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+                            <label class="switch_label" for="cmn-toggle-4" data-on="ON" data-off="OFF"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 large-10 large-offset-1 end columns">
+
+        </div>
+    </div>
+</section>
+
+<section class="products_history_container">
+    <div class="row">
+
+        <div class="small-6 large-5 columns large-offset-1">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3 class="subsection_name">Products</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <ul class="products_flexbox_container">
+                        <li class="product_box">
+                            <span><img src="images/icons/wallet.png"></span>
+                            <div class="product_box_text">
+                                <span class="product_box_name">Wallets</span><br>
+                                <span class="product_box_value">500,00 PLN</span>
+                            </div>
+                        </li>
+                        <li class="product_box">
+                            <span class="badge productCount" aria-describedby="productCount">2</span>
+                            <span><img src="images/icons/deposits.png"></span>
+                            <div class="product_box_text">
+                                <span class="product_box_name">Deposits [2]</span><br>
+                                <span class="product_box_value">10 000,00 PLN</span>
+                            </div>
+                        </li>
+                        <li class="product_box">
+                            <span><img src="images/icons/accounts.png"></span>
+                            <div class="product_box_text">
+                                <span class="product_box_name">Accounts</span><br>
+                                <span class="product_box_value">7 200,00 PLN</span>
+                            </div>
+                        </li>
+                        <li class="product_box">
+                            <span class="badge productCount" aria-describedby="productCount">7</span>
+                            <span><img src="images/icons/funds.png"></span>
+                            <div class="product_box_text">
+                                <span class="product_box_name">Funds [3]</span><br>
+                                <span class="product_box_value">7 000,00 PLN</span>
+                            </div>
+                        </li>
+                        <li class="product_box">
+                            <span><img src="images/icons/loans_white.png"></span>
+                            <div class="product_box_text">
+                                <span class="product_box_name">Bank loans</span><br>
+                                <span class="product_box_value">-127 000,00 PLN</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-6 large-5 columns end">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3 class="subsection_name">History</h3>
+                </div>
+            </div>
+            <div class="row">                                <!-- część z historią transakcji -->
+                <div class="small-12 columns">
+                    <div class="list_component_container history_container">
+                        <ul class="row collapse list"></ul>         <!-- kod zaciągany z history.js-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/foundation.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>
