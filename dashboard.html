@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/app.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
-    <script src="js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+    <script src="js/hamburger_menu.js"></script>
     <script src="js/cash_values.js"></script>
     <script src="js/history_list.js"></script>
     <script src="js/chart.js"></script>
@@ -64,12 +65,12 @@
                 </div>
 
                 <div class="small-2 medium-4 large-3 columns">           <!-- nav -->
-                    <nav>
+                    <nav id="header_navigation" role="navigation">
                         <ul class="menu">
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/icons/home.png">
+                                        <img src="images/icons/home.png" alt="">
                                     </div>
                                     <span class="nav_name">HOME</span>
                                 </a>
@@ -77,25 +78,25 @@
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/icons/analyse.png">
+                                        <img src="images/icons/analyse.png" alt="">
                                     </div>
-                                    <span class="nav_name">ANALYSE</span>
+                                    <span class="nav_name">ANALIZUJ</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/icons/plan.png">
+                                        <img src="images/icons/plan.png" alt="">
                                     </div>
-                                    <span class="nav_name">PLAN</span>
+                                    <span class="nav_name">PLANUJ</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
-                                        <img src="images/icons/earn.png">
+                                        <img src="images/icons/earn.png" alt="">
                                     </div>
-                                    <span class="nav_name">EARN</span>
+                                    <span class="nav_name">ZARABIAJ</span>
                                 </a>
                             </li>
                         </ul>
@@ -106,7 +107,11 @@
 
                     <div class="search_power_outer_container">
                         <div class="search_power_inner_container"> <!-- container-->
-                            <span class="search_icon"><img src="images/icons/search.png"></span>
+                            <div id="wrap">
+                                <form action="" autocomplete="on">
+                                    <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                                </form>
+                            </div>
 
                             <span class="power_icon">
                                 <a href="#"><img src="images/icons/power.png"></a>
@@ -121,6 +126,21 @@
 
         </div>
 
+        <div class="dashboard_header_container_small">          <!-- nav for small screeens -->
+            <div class="row collapse">
+                <div class="small-11 columns end">
+                    <ul class="topnav" id="myTopnav" role="navigation">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Analyse</a></li>
+                        <li><a href="#">Plan</a></li>
+                        <li><a href="#">Earn</a></li>
+                        <li class="hamburger_icon">
+                            <a href="#"><img src="images/icons/menu_white.png" alt="MENU"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section class="stream_container">
