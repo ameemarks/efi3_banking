@@ -17,3 +17,15 @@
 .dashboard_buttons_container span {
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 670px) {
+  .dashboard_buttons_container span {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .sum_name {
+    font-size: 1.3rem;
+  }
+}

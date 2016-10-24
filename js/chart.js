@@ -62,7 +62,7 @@ $(document).ready(function() {
         //console.log("zmienna arrAmount = " + arrAmount);
 
         $(function () {
-            $('#container').highcharts({
+            $('#chart_container').highcharts({
                 legend: {
                     enabled: false
                 },

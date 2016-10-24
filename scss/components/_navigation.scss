@@ -42,6 +42,12 @@
   }
 }
 
+@media screen and (max-width:779px) {
+  .dashboard_menu {
+    display: none;
+  }
+}
+
 .nav_icon {
   margin: 10px auto;
   img {

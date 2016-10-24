@@ -1,6 +1,13 @@
 /* Media queries hiding nav for medium and large screens */
+
 @media screen and (min-width:640px) {
   .topnav {
+    display: none;
+  }
+}
+
+@media screen and (min-width:780px) {
+  #myTopnav {
     display: none;
   }
 }
