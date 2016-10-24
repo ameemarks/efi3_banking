@@ -66,7 +66,7 @@
 
                 <div class="small-2 medium-4 large-3 columns">           <!-- nav -->
                     <nav id="header_navigation" role="navigation">
-                        <ul class="menu">
+                        <ul class="menu dashboard_menu">
                             <li>
                                 <a href="#">
                                     <div class="nav_icon">
@@ -109,7 +109,8 @@
                         <div class="search_power_inner_container"> <!-- container-->
                             <div id="wrap">
                                 <form action="" autocomplete="on">
-                                    <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                                    <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                                    <input id="search_submit" value="Rechercher" type="submit">
                                 </form>
                             </div>
 
@@ -129,7 +130,7 @@
         <div class="dashboard_header_container_small">          <!-- nav for small screeens -->
             <div class="row collapse">
                 <div class="small-11 columns end">
-                    <ul class="topnav" id="myTopnav" role="navigation">
+                    <ul class="dashboard_topnav topnav" id="myTopnav" role="navigation">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Analyse</a></li>
                         <li><a href="#">Plan</a></li>
@@ -145,10 +146,8 @@
 
     <section class="stream_container">
 
-        <div class="row"></div>
-
         <div class="row">
-            <div class="small-12 medium-7 large-7 columns large-offset-1">    <!--finance life stream, values-->
+            <div class="small-12 medium-8 large-7 columns large-offset-1">    <!--finance life stream, values-->
 
                 <div class="row">
                     <div class="small-12 columns">
@@ -157,32 +156,32 @@
                 </div>
 
                 <div class="row">
-                    <div class="small-3 columns">
+                    <div class="small-4 columns">
                         <h2 class="sum_name">Balance</h2>
                     </div>
                     <div class="small-4 columns">
                         <h2 class="sum_name">Available funds</h2>
                     </div>
-                    <div class="small-5 columns">
+                    <div class="small-4 columns">
                         <h2 class="sum_name">Scheduled payments</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="small-3 columns">
+                    <div class="small-4 columns">
                         <div id="balance" class="sum_values" aria-label="Balance"></div>
                     </div>
                     <div class="small-4 columns">
                         <div id="funds" class="sum_values" aria-label="Available funds"></div>
                     </div>
-                    <div class="small-5 columns">
+                    <div class="small-4 columns">
                         <div id="payments" class="sum_values" aria-label="Scheduled payments"></div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="small-12 medium-5 large-3 columns end">           <!--additional account options for user-->
+            <div class="small-12 medium-4 large-3 columns end">           <!--additional account options for user-->
                 <div class="row collapse">
                     <div class="small-12 columns">
                         <div class="buttons_container dashboard_buttons_container">
@@ -208,7 +207,7 @@
 
         <div class="row">
             <div class="small-12 large-10 large-offset-1 end columns">
-                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                <div id="chart_container"></div>
             </div>
         </div>
     </section>
