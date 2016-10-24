@@ -1,6 +1,9 @@
 bower_components
 css
+<<<<<<< HEAD
 .idea/
+=======
+>>>>>>> 0e1a1a24ab93c437ded4a38ca316d6fdc2141a23
 
 # OS generated files #
 .DS_Store*
@@ -35,4 +38,7 @@ node_modules/
 *.psd
 *.ai
 *.bmp
+<<<<<<< HEAD
 views/
+=======
+>>>>>>> 0e1a1a24ab93c437ded4a38ca316d6fdc2141a23
