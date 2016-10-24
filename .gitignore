@@ -1,5 +1,6 @@
 bower_components
 css
+.idea/
 
 # OS generated files #
 .DS_Store*
